@@ -211,22 +211,17 @@ header.masthead {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size:cover;
 }
 
 header.masthead .overlay {
   position: absolute;
-  background-image: url(../img/team6.jpg);
   background-size: cover;
   opacity: 1.5;
-  filter: brightness(50%);
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-}
-.test{
-background-image: url(../img/team3.jpg);
 }
 
 header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
