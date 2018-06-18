@@ -1,43 +1,48 @@
-particlesJS('particles-js',
 
-  {
+
+particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 5,
+      "value": 80,
       "density": {
         "enable": true,
-        "value_area": 600
+        "value_area": 800
       }
     },
     "color": {
-      "value": ["#71A9F7"]
+      "value": "#ffffff"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#ffffff"
+        "color": "#000000"
       },
       "polygon": {
         "nb_sides": 5
       },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
     },
     "opacity": {
-      "value": .8 ,
+      "value": 0.5,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": .4,
-        "opacity_min": 1.0,
+        "speed": 1,
+        "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 8,
+      "value": 2,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 40,
         "size_min": 0.1,
         "sync": false
       }
@@ -45,13 +50,13 @@ particlesJS('particles-js',
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#D5CFE1",
-      "opacity": 0,
-      "width": 0
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 5,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -69,7 +74,7 @@ particlesJS('particles-js',
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
@@ -79,7 +84,7 @@ particlesJS('particles-js',
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 150,
         "line_linked": {
           "opacity": 1
         }
@@ -92,7 +97,7 @@ particlesJS('particles-js',
         "speed": 3
       },
       "repulse": {
-        "distance": 100,
+        "distance": 200,
         "duration": 0.4
       },
       "push": {
@@ -104,15 +109,6 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true
-}
-
-
-);
-
-new Typed(".searchText", {
-  strings: ["What would you like to learn?", "Σ"],
-  attr: "placeholder",
-  typeSpeed: 40,
-  startDelay: 1000,
-  backDelay: 10000
 });
+
+requestAnimationFrame();

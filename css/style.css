@@ -2,20 +2,6 @@ img{
   width: 100% !important;
   height: 100% !important;
 }
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
 
 body {
   font-size: 20px;
@@ -230,12 +216,17 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
+  background-image: url(../img/team6.jpg);
+  background-size: cover;
+  opacity: 1.5;
+  filter: brightness(50%);
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+}
+.test{
+background-image: url(../img/team3.jpg);
 }
 
 header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
@@ -464,5 +455,8 @@ footer .copyright {
 @media only screen and (max-width: 600px) {
     img {
         padding: 10px;
+    }
+    .content{
+      font-size: 1.2em;
     }
 }
